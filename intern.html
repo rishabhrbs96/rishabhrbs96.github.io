@@ -134,13 +134,15 @@
                         <div class="o-section__content  t-section__content  ">
                             
                             <div class="o-grid">
+                                <h3>Project aimed at building a service to rank consumer reviews of a product in order of their relevance for a customer.</h3>
+                                <ul>
+                                    
 
-                                                                <ul>
                                     <li>
                                         <div class="o-grid__col-xl-12  o-grid__col-sm-12">
                                             <div class="o-content">
                                                 <h4 class="t-link-container__item">
-                                                    point 1
+                                                    Studied about the current reviews ranking algorithm used by amazon and proposed a method to predict helpfulness of reviews by considering only the structural features of review text.
                                                 </h4>
                                             </div><!-- /o-content -->
                                         </div><!-- /o-grid__col -->
@@ -150,11 +152,52 @@
                                         <div class="o-grid__col-xl-12  o-grid__col-sm-12">
                                             <div class="o-content">
                                                 <h4 class="t-link-container__item">
-                                                    point 2
+                                                    Filter out inappropriate and non-English reviews. Used readability formulas to get readability score of the reviews.
                                                 </h4>
                                             </div><!-- /o-content -->
                                         </div><!-- /o-grid__col -->
                                     </li>
+
+                                    <li>
+                                        <div class="o-grid__col-xl-12  o-grid__col-sm-12">
+                                            <div class="o-content">
+                                                <h4 class="t-link-container__item">
+                                                    Assigned a content score to each review. This score depends upon how much does a review talks about the product (this is also used to filter out reviews which does not belong to this product).
+                                                </h4>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
+                                    </li>
+
+                                    <li>
+                                        <div class="o-grid__col-xl-12  o-grid__col-sm-12">
+                                            <div class="o-content">
+                                                <h4 class="t-link-container__item">
+                                                    Used content score and readability score to rank the reviews and extract top n (given by the user) reviews.
+                                                </h4>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
+                                    </li>
+
+                                    <li>
+                                        <div class="o-grid__col-xl-12  o-grid__col-sm-12">
+                                            <div class="o-content">
+                                                <h4 class="t-link-container__item">
+                                                    Created python package using nltk to generate ranked list of reviews. Used AWS’s Dynamodb and S3 to get and store data.
+                                                </h4>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
+                                    </li>
+
+                                    <li>
+                                        <div class="o-grid__col-xl-12  o-grid__col-sm-12">
+                                            <div class="o-content">
+                                                <h4 class="t-link-container__item">
+                                                    Created Java Service which first fetches reviews of a product and then uses the python package to rank the reviews. Used Amazon Jython to integrate Java service with python package.
+                                                </h4>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
+                                    </li>
+
 
                                 </ul>
 
@@ -201,7 +244,7 @@
                                         <div class="o-content__body">
                                             <h3>Programming Languages:</h3>
                                             <p>
-                                                C, C++, Java, Python
+                                                Python, Java
                                             </p>
                                         </div>
                                     </div><!-- /o-content -->
@@ -211,9 +254,9 @@
                                     <div class="o-content">
                                         <hr class="c-deco-line  t-primary-color-line" />
                                         <div class="o-content__body">
-                                            <h3>Software and Tools and Libraries</h3>
+                                            <h3>Software, Tools and Libraries Used</h3>
                                             <p>
-                                                Numpy, Pandas, Scikit-Learn, LATEX, Git, SQL, Vim
+                                                Numpy, nltk, jython, scikit-learn
                                             </p>
                                         </div>
                                     </div><!-- /o-content -->
@@ -259,22 +302,11 @@
                                         <div class="o-grid__col-xl-12  o-grid__col-sm-12">
                                             <div class="o-content">
                                                 <h4 class="t-link-container__item">
-                                                    Code Repo
+                                                    [Code Repo]
                                                 </h4>
                                             </div><!-- /o-content -->
                                         </div><!-- /o-grid__col -->
                                     </li>
-
-                                    <li>
-                                        <div class="o-grid__col-xl-12  o-grid__col-sm-12">
-                                            <div class="o-content">
-                                                <h4 class="t-link-container__item">
-                                                    reference link
-                                                </h4>
-                                            </div><!-- /o-content -->
-                                        </div><!-- /o-grid__col -->
-                                    </li>
-
                                 </ul>
 
                             </div><!-- /o-grid -->
